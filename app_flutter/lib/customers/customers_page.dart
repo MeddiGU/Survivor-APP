@@ -206,19 +206,18 @@ String getCoachSurname(int coachId) {
                   children: [
                     Row(
                       children: [
-                        // Container uniquement autour de l'icône
                         Container(
-                          padding: EdgeInsets.all(8), // Ajuste l'espace autour de l'icône
+                          padding: EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             color: Theme.of(context).primaryColor.withOpacity(0.1),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Icon(
-                            Icons.people, // Icône de ton choix
-                            color: Theme.of(context).primaryColor, // Couleur de l'icône
+                            Icons.people,
+                            color: Theme.of(context).primaryColor,
                           ),
                         ),
-                        SizedBox(width: 8), // Espace entre l'icône et le texte
+                        SizedBox(width: 8),
                         Text(
                           'Customers List',
                           style: TextStyle(
