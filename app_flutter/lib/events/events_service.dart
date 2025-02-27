@@ -5,7 +5,7 @@ import 'dart:convert';
 
 class EventsService {
   final baseUrl = ConfigService.get('API_BASE_URL');
-
+  
   Future<List<EventDTO>> fetchEvents() async {
     final apiUrl = "$baseUrl/api/events";
     final response = await http.get(Uri.parse(apiUrl));
